@@ -9,9 +9,11 @@ define narrator = Character(
 )
 define P = Character('Порфирий Ливанов', color="#b5b5b5")
 define L = Character('Леха Черных', color="#b5b5b5")
+define Boris = Character('Борис', color="#b5b5b5")
+define Doc = Character('Доктор Денис', color="#b5b5b5")
 define Drunkard = Character('Алкаш', color="#b5b5b5")
 define Maiden = Character('Уборщица', color="#b5b5b5")
-define Boris = Character('Борис', color="#b5b5b5")
+
 
 transform default_pos:
     zoom 0.70
