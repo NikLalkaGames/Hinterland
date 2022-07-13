@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 34: end of line expected.
-    with dissolve:
-                 ^
+The label chapter1 is defined twice, at File "game/script/chapter1.rpy", line 1:
+label chapter1:
+and File "game/script/old_demo.rpy", line 1:
+label chapter1:
 
-Ren'Py Version: Ren'Py 7.3.5.606
-Tue Jul 13 19:24:24 2021
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Wed Jul 13 18:54:53 2022

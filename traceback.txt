@@ -1,28 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 67, in script
-    with dissolve(.5)
-TypeError: 'Dissolve' object is not callable
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 67, in script
-    with dissolve(.5)
-  File "C:\RenPy\renpy-7.3.5-sdk\renpy\ast.py", line 1389, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\RenPy\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\RenPy\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
-    clear=clear)
-  File "C:\RenPy\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\RenPy\renpy-7.3.5-sdk\renpy\display\core.py", line 3047, in interact_core
-    new_widget=layers_root)
-TypeError: 'Dissolve' object is not callable
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "C:\GameProjects\renpy-8.0.1-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\GameProjects\renpy-8.0.1-sdk\renpy\python.py", line 1049, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\GameProjects\renpy-8.0.1-sdk\renpy\loadsave.py", line 382, in save
+    roots = renpy.game.log.freeze(None)
+  File "C:\GameProjects\renpy-8.0.1-sdk\renpy\rollback.py", line 1017, in freeze
+    self.complete(False)
+  File "C:\GameProjects\renpy-8.0.1-sdk\renpy\rollback.py", line 584, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = delta
+AttributeError: 'NoneType' object has no attribute 'stores'
 
-Windows-8-6.2.9200
-Ren'Py 7.3.5.606
-There is no god here 1.0
-Thu Jul 08 17:03:32 2021
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.1.22070801
+There is no god in Hinterland 1.0
+Wed Jul 13 17:21:17 2022
