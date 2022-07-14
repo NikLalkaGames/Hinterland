@@ -14,7 +14,6 @@ define Doc = Character('Доктор Денис', color="#b5b5b5")
 define Drunkard = Character('Алкаш', color="#b5b5b5")
 define Maiden = Character('Уборщица', color="#b5b5b5")
 
-
 transform default_pos:
     zoom 0.70
     xalign 0.5
@@ -31,4 +30,6 @@ label start:
     call chapter1
 
 
-    return
+    label end_game:
+        "Конец"
+return
