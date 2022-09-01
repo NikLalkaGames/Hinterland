@@ -1,5 +1,5 @@
 label chapter1:
-    scene bg black with Dissolve(2.0):
+    scene bg black
 
     "Когда поезд наконец остановился, когда впереди идущая жирная женщина наконец вывалилась из вагона с тюфяками,"
 
@@ -7,7 +7,7 @@ label chapter1:
 
     "Только тогда я понял до конца, что жизнь изменилась навсегда."
 
-    "Когда всю жизнь проводишь в Москве, забываешь, что за оберегаюшим кольцом МКАДА все совсем иначе:"
+    "Когда всю жизнь проводишь в Москве, забываешь, что за оберегаюшим кольцом МКАД все совсем иначе:"
 
     "Здесь нет милых помоек для собачего говна, душистых кофеен и парков для малолетних прыщавых скейтеров,"
 
@@ -31,9 +31,9 @@ label chapter1:
 
 #1.	ЛОКАЦИЯ: БАР
 label bar_entry_talk:
-    scene bg saloon with Dissolve(1)
+    scene bg saloon with Dissolve(.8)
 
-    show lyokha calm at default_pos with Dissolve(1)
+    show lyokha calm at default_pos with Dissolve(.8)
     
     L "Ну и рожа, ей богу. Слухай, брат, тебе б антидепрессантов попить каких-нибудь или хотя б пивка дерябнуть."
 
@@ -401,11 +401,12 @@ label street_scene:
 
     "Господи, опять прослушал его историю."
 
-    # TODO: стоит ли оставлять нижние две реплики? решить
+    # TODO: стоит ли оставлять нижние две реплики? Из-за фона может показаться, что персонажи просто стоят, а не идут
+    # Лучше показать, что они идут
 
-    P "Мы скоро?"
-    
-    L "Дык почти пришли уже. Вот она. Доктор Денис на третьем этаже."
+    P "Может уже двинем?"
+
+    L "Ну давай, торопыжка."
 
 #6.	ЛОКАЦИЯ: БОЛЬНИЦА
 label hospital:
@@ -457,9 +458,11 @@ label hospital:
     
     L "В этот раз не уйдет, собака!"
 
-    hide lyokha calm 
+    hide lyokha calm with dissolve
 
-    hide doc
+    hide doc with dissolve
+
+    pause(3.0)
 
 #7.	ЛОКАЦИЯ: УЛИЦА.
 label street_scene_two:
@@ -497,7 +500,7 @@ label street_scene_two:
     L "Предлагаю разделиться. Ты куда пойти хочешь?"
     
 #8.	ЛОКАЦИЯ: УЛИЦА
-label street_scene_three: #TODO: add street background
+label street_scene_three:
     scene bg street with Dissolve(0.5):
         zoom 0.22
 
@@ -517,9 +520,11 @@ label street_scene_three: #TODO: add street background
 
     "Вот тебе и улика, вот и убийца. Конечно, бар может работать без посетителей, когда ты убиваешь и грабишь того, кто туда зайдет."
     
-    # TODO: Стоит ли попросить Диму добавить реплики про доктора, 
+    # TODO: Стоит ли попросить Диму добавить реплики про доктора
     
     "Держись, паскуда, сегодня от правосудия пахнет свинцом."
+
+    scene bg black
 
     menu:
         "Предположить, что убийца: "
@@ -658,8 +663,10 @@ label darkness:
 
     Doc "Сейчас осмотрим зубки."
 
-#9.3 ЛОКАЦИЯ: ПОЕЗД #TODO: add train background
+#9.3 ЛОКАЦИЯ: ПОЕЗД
 label train:
+    scene bg train with dissolve:
+        zoom 0.22
 
     "Как же я, нахуй, ненавижу эти выездные задания. Все время посылают в какую-то дыру."
 
@@ -679,8 +686,10 @@ label train:
 
     jump end_game
     
-#10.1 ЛОКАЦИЯ: УЛИЦА #TODO: add street background
+#10.1 ЛОКАЦИЯ: УЛИЦА 
 label street_guess_about_the_dock:
+    scene bg street with dissolve:
+        zoom 0.22
 
     P "Как же тяжко на душе, когда идешь в больницу. Даже если тебя там, вроде как, ничего плохого не ждет."
 
@@ -700,9 +709,10 @@ label street_guess_about_the_dock:
 
     P "Погоди-ка, погоди-ка. Вот оно что! Ну держись, сученыш."
     
-# 10.2 ЛОКАЦИЯ: БОЛЬНИЦА  #TODO: add hospital back
+# 10.2 ЛОКАЦИЯ: БОЛЬНИЦА 
 label hospital_doc_interrogation:
-    scene bg black
+    scene bg docroom with Dissolve(.5):
+        zoom 0.24
 
     show doc at default_pos with fade
 
@@ -808,8 +818,10 @@ label hospital_doc_interrogation:
 
     P "Пора валить отсюда. Прости, дружок. Увидишь ад - передай, чтобы к ужину меня не ждали."
 
-#10.3 ЛОКАЦИЯ: ПОЕЗД #TODO: add train background
+#10.3 ЛОКАЦИЯ: ПОЕЗД
 label train_second:
+    scene bg train with dissolve:
+        zoom 0.22
 
     P "Никогда не думал, что будет так приятно вновь услышать запах вокзального креозота."
 

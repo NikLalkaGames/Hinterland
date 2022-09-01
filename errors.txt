@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script/chapter1.rpy", line 283: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    xzoom -0.70
-    ^
+File "game/script/chapter1.rpy", line 535: expected statement.
+    repeat
+          ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Wed Aug 31 20:12:39 2022
+Thu Sep  1 03:09:29 2022
