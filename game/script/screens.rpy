@@ -302,8 +302,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Начать") action Start()
-
+            textbutton _("Начать") action [Play('sound', "sounds/game_start.mp3"), Start()]
         else:
 
             textbutton _("История") action ShowMenu("history")

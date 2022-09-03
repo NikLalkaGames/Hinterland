@@ -29,6 +29,12 @@ transform default_pos:
 
 # Игра начинается здесь (entrypoint):
 label start:
+
+    stop music
+
+    show bg black
+    $ renpy.pause(3.0, hard=True)
+
     call chapter1
 
 
