@@ -19,9 +19,6 @@ transform default_pos:
     xalign 0.5
     yalign 1.0
 
-
-
-
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -29,7 +26,6 @@ transform default_pos:
 
 # Игра начинается здесь (entrypoint):
 label start:
-
     stop music
 
     show bg black

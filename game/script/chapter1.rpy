@@ -29,8 +29,6 @@ label chapter1:
 
     "Пока какой-то местный мент пытается со мной поговорить"
 
-
-
 #1.	ЛОКАЦИЯ: БАР
 label bar_entry_talk:
 
@@ -612,23 +610,33 @@ label bar_talk_with_boris:
 
     P "Ближнему бою, собака."
 
-    scene bg fight with dissolve:
+    scene bg fight with dissolve:   # TODO: add shake effect of attack to doc ()
         zoom 0.22
 
-    pause 2.0
+    # pause 2.0
 
-    # TODO: add attack sound
-    # TODO: add shake effect of attack to doc ()
+    play sound "sounds/punch.mp3"
 
     Doc "АЙ. Хороший удар, Порфирий."
 
     P "Блять."
 
+    scene bg black
+
+    play sound "sounds/body_fall.mp3"
+
     P "Лицо чувствует тепло. Он разбил мне нос, идет кровь."
+
+    scene bg fight with dissolve:
+        zoom 0.22
 
     P "Посмотрим, что он скажет на удар ногой по яйцам."
 
+    play sound "sounds/punch.mp3"
+
     Doc "Грязный прием, Ливанов! Но я быстрее, чем вы думаете."
+
+    play sound "sounds/punch.mp3"
 
     P "Сука, как больно!"
 
@@ -652,7 +660,7 @@ label bar_talk_with_boris:
 
 #9.2 ЛОКАЦИЯ1: ТЕМНОТА
 label darkness:
-    scene bg black with fade
+    scene bg black
 
     P "БЛЯЯЯЯЯЯДЬ СУКА МОИ ГЛАЗА"
 
@@ -669,6 +677,8 @@ label darkness:
     Doc "Порфирий, добрый вечер. Не хотел вас будить, вы так мило спали, когда потеряли сознание после болевого шока."
 
     Doc "Сейчас осмотрим зубки."
+
+    pause 3.0
 
 #9.3 ЛОКАЦИЯ: ПОЕЗД
 label train:
@@ -821,7 +831,7 @@ label hospital_doc_interrogation:
 
     P "И все же стрелять всяких уродов приятно само по себе."
 
-    # TODO: add shot effect (transition + sound)
+    play sound "sounds/gun_shot.mp3"
 
     Doc "Блядь! Вы...вы еще...вы еще пожалеете..."
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script/script.rpy", line 36: expected statement.
-    renpy.pause(5.0, hard=true)
-                               ^
+File "game/script/chapter1.rpy", line 635: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    play sound "sounds/punch.mp3"
+    ^
 
-Ren'Py Version: Ren'Py 7.3.5.606
-Sat Sep 03 16:09:05 2022
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Sun Sep  4 22:29:51 2022
