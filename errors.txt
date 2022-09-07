@@ -2,9 +2,85 @@
 errors listed below, and try again.
 
 
-File "game/script/chapter1.rpy", line 635: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    play sound "sounds/punch.mp3"
-    ^
+File "game/script/chapter1.rpy", line 6: expected statement.
+    "Когда поезд наконец остановился," xalign 0.5
+                                               ^
+
+File "game/script/chapter1.rpy", line 8: expected statement.
+    "Когда впереди идущая жирная женщина{vspace=15}наконец вывалилась из вагона с тюфяками," xalign 0.5
+                                                                                                     ^
+
+File "game/script/chapter1.rpy", line 10: expected statement.
+    "Когда я сам уставший вышел, оставляя{vspace=15}семьдесят шестой скорый уходящей вдаль колее," xalign 0.5
+                                                                                                           ^
+
+File "game/script/chapter1.rpy", line 12: expected statement.
+    "Только тогда я понял до конца, что{vspace=15}жизнь изменилась навсегда." xalign 0.5
+                                                                                      ^
+
+File "game/script/chapter1.rpy", line 14: expected statement.
+    "Когда всю жизнь проводишь в Москве,{vspace=15}забываешь, что за оберегаюшим кольцом МКАД\nвсе совсем иначе:" xalign 0.5
+                                                                                                                          ^
+
+File "game/script/chapter1.rpy", line 16: expected statement.
+    "Здесь нет милых помоек для собачего говна," xalign 0.5
+                                                         ^
+
+File "game/script/chapter1.rpy", line 18: expected statement.
+    "Душистых кофеен и парков для малолетних{vspace=15}прыщавых скейтеров," xalign 0.5
+                                                                                    ^
+
+File "game/script/chapter1.rpy", line 20: expected statement.
+    "Нет мелькающих в потоке такси" xalign 0.5
+                                            ^
+
+File "game/script/chapter1.rpy", line 22: expected statement.
+    "Нет постоянно обновленных бордюров," xalign 0.5
+                                                  ^
+
+File "game/script/chapter1.rpy", line 24: expected statement.
+    "Зато есть бесконечная русская хтонь, чернота, боль," xalign 0.5
+                                                                  ^
+
+File "game/script/chapter1.rpy", line 26: expected statement.
+    "Есть насилие, алкоголизм, ненависть и злоба." xalign 0.5
+                                                           ^
+
+File "game/script/chapter1.rpy", line 28: expected statement.
+    "Я шел сюда, в бар, сквозь нестройные{vspace=15}ряды серых пятиэтажек, ржавые площадки," xalign 0.5
+                                                                                                     ^
+
+File "game/script/chapter1.rpy", line 30: expected statement.
+    "Обходя стороной детей, которые давно уже взрослые." xalign 0.5
+                                                                 ^
+
+File "game/script/chapter1.rpy", line 32: expected statement.
+    "Здесь трахаются раньше, чем проходят половое{vspace=15}размножение на биологии" xalign 0.5
+                                                                                             ^
+
+File "game/script/chapter1.rpy", line 34: expected statement.
+    "И умирают раньше, гораздо раньше, чем стареют." xalign 0.5
+                                                             ^
+
+File "game/script/chapter1.rpy", line 36: expected statement.
+    "Вы спросите:" xalign 0.5
+                           ^
+
+File "game/script/chapter1.rpy", line 38: expected statement.
+    "Почему успешный молодой следователь оказалсяздесь, в этом царстве печали?" xalign 0.5
+                                                                                        ^
+
+File "game/script/chapter1.rpy", line 40: expected statement.
+    "Глупый случай. Совсем скоро узнаете, обещаю." xalign 0.5
+                                                           ^
+
+File "game/script/chapter1.rpy", line 42: expected statement.
+    "Но пока..." xalign 0.5
+                         ^
+
+File "game/script/chapter1.rpy", line 44: expected statement.
+    "Пока какой-то местный мент пытается со мной поговорить..." xalign 0.5
+                                                                        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Sun Sep  4 22:29:51 2022
+Tue Sep  6 15:01:29 2022
