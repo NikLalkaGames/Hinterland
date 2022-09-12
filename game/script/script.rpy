@@ -1,11 +1,13 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define narrator = Character(
+define N = Character(
     None,
-    #window_background = None,
-    #what_xalign = 0.5,
-    #what_textalign = 0.5
+    what_xalign=0.5, #Centers text within the window
+    window_xalign=0.5, #Centers the window horizontally
+    window_yalign=0.5, #Centers the window vertically
+    what_text_align=0.5, #Centers text within the window, just in case
+    window_background=None,#Removes the window, so only the text shows
 )
 define P = Character('Порфирий Ливанов', color="#b5b5b5")
 define L = Character('Леха Черных', color="#b5b5b5")
@@ -18,6 +20,7 @@ transform default_pos:
     zoom 0.70
     xalign 0.5
     yalign 1.0
+
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
