@@ -32,8 +32,7 @@ label start:
     $ renpy.pause(3.0, hard=True)
 
     call chapter1
-
-
+    
     label end_game:
         "Конец"
 return
