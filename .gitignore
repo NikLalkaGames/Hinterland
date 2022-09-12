@@ -1,8 +1,9 @@
 ### Renpy ###
 # Don't track content of these folders #
 ########################################
-**/cache/
-**/saves/
+
+cache/
+saves/
 
 
 # Compiled source #
@@ -20,10 +21,10 @@
 
 # The log file and other misc things #
 ######################################
-./log.txt
-./errors.txt
-./traceback.txt
-./files.txt
+log.txt
+errors.txt
+traceback.txt
+files.txt
 
 ### VisualStudioCode ###
 .vscode
@@ -44,7 +45,3 @@
 
 # Ignore code-workspaces
 *.code-workspace
-
-# output
-
-# End of https://www.toptal.com/developers/gitignore/api/renpy,visualstudiocode
