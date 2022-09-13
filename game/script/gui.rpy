@@ -33,7 +33,7 @@ define gui.idle_color = '#888888'
 define gui.idle_small_color = '#aaaaaa'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#e06666'
+define gui.hover_color = '#ca3a3a'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
@@ -71,7 +71,7 @@ define gui.text_size = 33
 define gui.name_text_size = 45
 
 ## Размер текста в пользовательском интерфейсе.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 36
 
 ## Размер заголовков в пользовательском интерфейсе.
 define gui.label_text_size = 36
@@ -80,7 +80,7 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## Размер заголовка игры.
-define gui.title_text_size = 75
+define gui.title_text_size = 55
 
 
 ## Главное и игровое меню. #####################################################
@@ -153,7 +153,7 @@ define gui.button_width = None
 define gui.button_height = None
 
 ## Границы каждой стороны кнопки в порядке слева, сверху, справа, снизу.
-define gui.button_borders = Borders(6, 6, 6, 6)
+define gui.button_borders = Borders(20, 20, 20, 20)
 
 ## Если True, фон изображения будет моститься. Если False, фон изображения будет
 ## линейно масштабирован.
