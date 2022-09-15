@@ -642,7 +642,7 @@ label bar_talk_with_boris:
     scene bg fight with dissolve:
         zoom 0.22
 
-    "Посмотрим, что он скажет на удар ногой по яйцам."
+    "Посмотрим, что он ответит на удар ногой по яйцам."
 
     play sound "sounds/punch.mp3"
 
@@ -713,7 +713,7 @@ label train:
 
     "Куда же вы всё-таки запропастились, товарищ Ливанов?"
 
-    jump end_game
+    jump end_chapter1
 
 #10.1 ЛОКАЦИЯ: УЛИЦА
 label street_guess_about_the_dock:
@@ -870,6 +870,6 @@ label train_second:
 
     "Старший следователь Порфирий Ливанов еще никогда в своей жизни так сильно не ошибался."
 
-    jump end_game
+label end_chapter1:
 
 return
