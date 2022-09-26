@@ -301,7 +301,7 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
-            
+
             textbutton _("Начать") action [Play('sound', "sounds/game_start.mp3"), Start()]
         else:
 
@@ -312,6 +312,8 @@ screen navigation():
         textbutton _("Загрузить") action ShowMenu("load")
 
         textbutton _("Настройки") action ShowMenu("preferences")
+
+        textbutton _("Оставить отзыв") action OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSe0Zrszop5juI5wL2k5N_qDEBuUJZ5iwpPkZteHUQgbCQilWQ/viewform?usp=sharing")
 
         if _in_replay:
 
